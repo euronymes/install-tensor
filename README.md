@@ -18,10 +18,10 @@ la manip est la meme (il est possible de mettre dans le dossier de tensor aussi)
 
 Pour les GPU: 
 
-gpus = tf.config.experimental.list_physical_devices('GPU')
+`gpus = tf.config.experimental.list_physical_devices('GPU')
 if gpus:
       tf.config.experimental.set_visible_devices(gpus[0], 'GPU')
-      tf.config.experimental.set_memory_growth(gpu, True)
+      tf.config.experimental.set_memory_growth(gpu, True)`
 # pip
 écriture pour pip <= 20.0 
 selon version
