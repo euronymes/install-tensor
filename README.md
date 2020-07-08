@@ -5,8 +5,18 @@ nécessite de télécharger le ficher https://drive.google.com/uc?export=downloa
 (~=dossier personnel = /home/$USER)
 
 # pyinstaller 
-nécessite l'ajout de hook (~/.local/lib/python3.6/site-packages/PyInstaller/hooks/)
-
+nécessite l'ajout de hook (~/.local/lib/python3.6/site-packages/PyInstaller/hooks/) ou copier manuellement les fichier manquant ~/.local/lib/python3.x/site-packages
+cp -r /dist/nom/* build/nom/ corrige l'importation de librairie python
 # tensor
 download object_detection du github et le mettre dans ~/.local/lib/python3.x/site-packages 
+il y a d'autres paquet du git qui n'ont pas encore était pull dans le build pip,
+la manip est la meme (il est possible de mettre dans le dossier de tensor aussi)
 
+#pip
+écriture pour pip <= 20.0 
+selon version
+$pip install paquet
+$pip3 install paquet 
+
+pip => 20.0
+python3 -m pip install paquet1 paquet2 
