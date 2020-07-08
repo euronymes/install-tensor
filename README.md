@@ -1,7 +1,6 @@
 # Info
 Test réalisé sur:
 _Ubuntu 18.04 (xubuntu Lubuntu Kubuntu auras juste de légére difference sur l'uttilisation des ressources de l'ordinateur)
-
 _Python 3.6
 _nvidia 440 (ubuntu release)
 
