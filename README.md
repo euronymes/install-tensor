@@ -13,7 +13,6 @@ Installation cuda:
 le script installera cuda 10.2 avec libcudnn 7.6.5
 nécessite de télécharger le ficher https://drive.google.com/uc?export=download&id=1uffdAM_4lyU0zBvRR7F70k-R_mFmqLw2  manuellement, puis lancer le script install-cuda dans le répertoire où est ce fichier
 
-(~=dossier personnel = /home/$USER)
 # pip
 le script pip-install installera python3.6 pip3 et quelques librairie python uttilisé pendant les tests
 écriture pour pip <= 20.0 
