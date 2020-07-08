@@ -12,6 +12,15 @@ Installation cuda:
 nécessite de télécharger le ficher https://drive.google.com/uc?export=download&id=1uffdAM_4lyU0zBvRR7F70k-R_mFmqLw2  manuellement, puis lancer le script install-cuda dans le répertoire où est ce fichier
 
 (~=dossier personnel = /home/$USER)
+# pip
+écriture pour pip <= 20.0 
+selon version
+`$ pip install paquet`
+`$ pip3 install paquet` 
+
+pip => 20.0
+python3 -m pip install paquet1 paquet2 
+(l'ancienne éciture fonctione toujours)
 # install manuel python
 mettre le paquet dans ~/.local/lib/python3.6/site-packages/
 # pyinstaller 
@@ -29,15 +38,7 @@ Pour les GPU:
 if gpus:
       tf.config.experimental.set_visible_devices(gpus[0], 'GPU')
       tf.config.experimental.set_memory_growth(gpu, True)`
-# pip
-écriture pour pip <= 20.0 
-selon version
-`$ pip install paquet`
-`$ pip3 install paquet` 
 
-pip => 20.0
-python3 -m pip install paquet1 paquet2 
-(l'ancienne éciture fonctione toujours)
 
 # information GPU
 `$ nvidia-smi` ou en gui avec actuallisation automatique `$ nvidia-settings`
