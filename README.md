@@ -1,3 +1,6 @@
+# linux
+~=dossier personnel = /home/$USER
+
 # install-cuda
 Installation cuda:
 nécessite de télécharger le ficher https://drive.google.com/uc?export=download&id=1uffdAM_4lyU0zBvRR7F70k-R_mFmqLw2  manuellement, puis lancer le script install-cuda dans le répertoire où est ce fichier
@@ -7,7 +10,7 @@ nécessite de télécharger le ficher https://drive.google.com/uc?export=downloa
 mettre le paquet dans ~/.local/lib/python3.6/site-packages/
 # pyinstaller 
 nécessite l'ajout de hook (~/.local/lib/python3.6/site-packages/PyInstaller/hooks/) ou copier manuellement les fichier manquant ~/.local/lib/python3.x/site-packages
-cp -r /dist/nom/* build/nom/ corrige l'importation de librairie python
+`cp -r /dist/nom/* build/nom/ corrige l'importation de librairie python`
 # tensor
 download object_detection du github et le mettre dans ~/.local/lib/python3.x/site-packages 
 il y a d'autres paquet du git qui n'ont pas encore était pull dans le build pip,
@@ -22,11 +25,12 @@ if gpus:
 # pip
 écriture pour pip <= 20.0 
 selon version
-$pip install paquet
-$pip3 install paquet 
+`$pip install paquet`
+`$pip3 install paquet` 
 
 pip => 20.0
 python3 -m pip install paquet1 paquet2 
 (l'ancienne éciture fonctione toujours)
 
-
+# information GPU
+`$ nvidia-smi`
