@@ -13,6 +13,7 @@ nécessite de télécharger le ficher https://drive.google.com/uc?export=downloa
 
 (~=dossier personnel = /home/$USER)
 # pip
+le script pip-install installera python3.6 pip3 et quelques librairie python uttilisé pendant les tests
 écriture pour pip <= 20.0 
 selon version
 `$ pip install paquet`
