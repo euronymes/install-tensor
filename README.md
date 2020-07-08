@@ -8,6 +8,7 @@ _nvidia 440 (ubuntu release)
 ~=dossier personnel = /home/$USER
 
 # install-cuda
+cuda 10.x n'est installable que depuis la release nvidia jusque ubuntu 20.04
 Installation cuda:
 le script installera cuda 10.2 avec libcudnn 7.6.5
 nécessite de télécharger le ficher https://drive.google.com/uc?export=download&id=1uffdAM_4lyU0zBvRR7F70k-R_mFmqLw2  manuellement, puis lancer le script install-cuda dans le répertoire où est ce fichier
