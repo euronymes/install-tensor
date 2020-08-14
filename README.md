@@ -12,7 +12,10 @@ cuda 10.x n'est installable que depuis la release nvidia jusque ubuntu 20.04
 Installation cuda:
 le script installera cuda 10.2 avec libcudnn 7.6.5
 nécessite de télécharger le ficher https://drive.google.com/uc?export=download&id=1uffdAM_4lyU0zBvRR7F70k-R_mFmqLw2  manuellement, puis lancer le script install-cuda dans le répertoire où est ce fichier
-
+# bonne pratique
+si besoin d'installer des paquets sans être sûr du nom precis il vaut mieux priviligier un gestionnaire de paquet graphique comme synaptic
+`sudo apt install synaptic -y
+sudo synaptic`
 # pip
 le script pip-install installera python3.6 pip3 et quelques librairie python uttilisé pendant les tests
 écriture pour pip <= 20.0 
@@ -23,11 +26,11 @@ selon version
 pip => 20.0
 python3 -m pip install paquet1 paquet2 
 (l'ancienne éciture fonctione toujours)
-# install manuel python
+# install manuel librairy python
 mettre le paquet dans ~/.local/lib/python3.6/site-packages/
 # pyinstaller 
-nécessite l'ajout de hook (~/.local/lib/python3.6/site-packages/PyInstaller/hooks/) ou copier manuellement les fichier manquant ~/.local/lib/python3.x/site-packages
-`cp -r /dist/nom/* build/nom/ corrige l'importation de librairie python`
+il faudra surement copier les fichier binaire de pyinstaller avec 
+`sudo cp ~/.local/bin/file /usr/bin`
 # tensor
 testé 1.14 1.15 et 2.2 version gpu avec uttilisation du gpu
 download object_detection du github et le mettre dans ~/.local/lib/python3.x/site-packages 
